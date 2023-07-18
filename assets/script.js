@@ -11,7 +11,7 @@ var fiveWeatherEl = document.getElementById("fiveWeather")
 
 function getApi(requestUrl) {
     var city = input.value
-    var geoURL = "http://api.openweathermap.org/geo/1.0/direct?q="+ city +"&appid="+ api
+    var geoURL = "https://api.openweathermap.org/geo/1.0/direct?q="+ city +"&appid="+ api
   fetch(geoURL)
     .then(function (response) {
       console.log(response.status);
